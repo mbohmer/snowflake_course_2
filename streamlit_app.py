@@ -47,13 +47,13 @@ try:
 # write your own comment -what does the next line do? 
 # write your own comment - what does this do?
 
-my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
-my_cur = my_cnx.cursor()
-my_cur.execute("select * from pc_rivery_db.public.fruit_load_list")
-my_data_rows = my_cur.fetchall()
-streamlit.header("Fruit Load List Contains:")
-streamlit.dataframe(my_data_rows)
+#my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
+#my_cur = my_cnx.cursor()
+#my_cur.execute("select * from pc_rivery_db.public.fruit_load_list")
+#my_data_rows = my_cur.fetchall()
+#streamlit.header("Fruit Load List Contains:")
+#streamlit.dataframe(my_data_rows)
 
 #streamlit.write('Thanks for adding ', add_my_fruit)
 
-my_cur.execute("insert into fruit_load_list values ('test')")
+#my_cur.execute("insert into fruit_load_list values ('test')")
